@@ -8,6 +8,8 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.json());
 app.use("/api/users", require("./routes/api/users"));
+app.use("/api/weights", require("./routes/api/weight"));
+
 app.get("/", (req, res) => {
   res.send("hello world!");
 });
