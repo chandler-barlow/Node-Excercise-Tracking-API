@@ -1,8 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
-const db = require("./database/db");
 
-const PORT = process.env.PORT || 5000;
+const PORT = 3000;
 const app = express();
 
 app.use(morgan("dev"));

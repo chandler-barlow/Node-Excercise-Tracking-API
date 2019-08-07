@@ -1,0 +1,3 @@
+FROM mysql:5.7
+USER root
+RUN sed -i -e "/^bind-address/d" /etc/mysql/my.cnf

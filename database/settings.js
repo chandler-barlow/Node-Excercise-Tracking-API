@@ -1,7 +1,7 @@
 const settings = {
-  host: "localhost",
-  user: "chan",
-  password: "password",
-  database: "excercise_tracking"
+  host: "excercise_db",
+  user: "root",
+  password: "1234",
+  database: "excercise_tracker"
 };
 module.exports = settings;
