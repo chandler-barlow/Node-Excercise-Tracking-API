@@ -8,6 +8,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/weights", require("./routes/api/weight"));
+app.use("/api/excercises", require("./routes/api/excercises"));
 
 app.get("/", (req, res) => {
   res.send("hello world!");
