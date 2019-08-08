@@ -10,7 +10,7 @@ router.get("/all", (req, res) => {
   });
 });
 
-router.get("/by_userid/:id", (req, res) => {
+router.get("/by_userId/:id", (req, res) => {
   const sql = `SELECT name FROM users WHERE users.Id = ${req.params.id}`;
   db.query(sql, (err, result) => {
     if (err) throw err;

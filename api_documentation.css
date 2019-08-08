@@ -1,0 +1,49 @@
+.title {
+  padding: 0.3em 0em 0.3em 0.6em;
+  color: white;
+  background: rgb(29, 55, 112);
+  font-size: 2.5em;
+  width: 97.5%;
+  margin: 0em;
+  //text-align: center;
+}
+body {
+  font-family: sans-serif;
+  margin: 0em 5em;
+  padding: 0em 0em 1em 0em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+}
+.endpoint_container {
+  border-bottom: rgba(128, 128, 128, 0.336) 1px solid;
+  width: 95%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.5em 0em;
+}
+h2 {
+  margin: 0.5em 0.7em;
+}
+h3 {
+  font-size: 1.5em;
+  margin: 0em 1em;
+  color: rgba(0, 0, 0, 0.678);
+}
+p {
+  margin: 0.8em 3em;
+  color: rgb(128, 128, 128);
+  font-size: 1em;
+}
+.get {
+  color: rgb(35, 182, 35);
+}
+.post {
+  color: rgb(88, 119, 221);
+}
+.put {
+  color: rgb(103, 103, 255);
+}
+.delete {
+  color: rgba(235, 78, 78, 0.774);
+}
