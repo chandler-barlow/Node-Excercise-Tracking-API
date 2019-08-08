@@ -27,6 +27,25 @@ or if you want to see the console logs from the server
 docker-compose up
 ```
 
+To access it after you start the containers or make requests
+Use port 3000.
+
+To make a request use 
+
+```
+http://localhost:3000/
+```
+Or
+
+```
+Http://172.0.0.1:3000/
+```
+
+There’s a html file with all the endpoint documentation for the api included
+Click that to open it and see all the requests
+(It’s not finished currently but ill finish it soon)
+
+
 ## Built With
 
 * [Docker](https://www.docker.com/) - Environment management
