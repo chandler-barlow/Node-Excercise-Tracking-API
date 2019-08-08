@@ -31,9 +31,9 @@ docker-compose up
 
 * [Docker](https://www.docker.com/) - Environment management
 * [Npm](https://www.npmjs.com/) - Package Management
+* [Mysql](https://www.mysql.com/) - Database server
 * [Node](https://rometools.github.io/rome/)
 * [Express](https://expressjs.com/)
-* [Mysql](https://www.mysql.com/) - Database server
 
 ## NPM packages used
 * [morgan](https://www.npmjs.com/package/morgan) - Logging
