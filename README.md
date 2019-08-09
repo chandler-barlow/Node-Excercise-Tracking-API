@@ -21,15 +21,19 @@ Run docker
 ```
 docker-compose up -d
 ```
-or if you want to see the console logs from the server ( The server logs all requests to console with morgan so the logs are pretty informative)
+Or if you want to see the console logs from the server while it's running. 
 
 ```
 docker-compose up
 ```
 
-The only exposed port is 3000, if you want to change the port check the dockerfile documentation included.
+The server logs all requests to console with morgan so the logs are pretty informative. 
+<br/>I recommend enabling that just to see if your requests are being recieved.
 
-To make a request use 
+#Ports
+
+The only exposed port is 3000, if you want to change the port check the dockerfile documentation included.
+<br/>To make a request use 
 
 ```
 http://localhost:3000/
