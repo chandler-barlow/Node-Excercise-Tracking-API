@@ -46,7 +46,7 @@ Http://172.0.0.1:3000/
 
 There’s a html file with all the endpoint documentation for the api included in the documentation folder.
 Click that to open it in your browser and see all the request endpoints.
-<br/>~(It’s not finished currently but ill finish it soon)~
+<br/>~Documentation isn't finished currently but I'll finish it soon.~
 <br/> The api documentation is finished for the current endpoints!
 
 
