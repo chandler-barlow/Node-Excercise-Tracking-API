@@ -8,7 +8,7 @@ Make sure you have the Docker daemon installed on your machine!
 
 ### Installing
 
-###### Setting up the environment
+#### Setting up the environment
 
 Navigate to the folder you downloaded everything to
 
