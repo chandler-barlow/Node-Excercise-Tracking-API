@@ -79,4 +79,6 @@ router.put("/edit", (req, res) => {
   });
 });
 
+//TODO DELETE EXCERCISE ENDPOINT
+
 module.exports = router;

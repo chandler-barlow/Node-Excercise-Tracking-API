@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>api</title>
+    <link rel="stylesheet" href="./api_documentation.css" />
+  </head>
+  <body>
+    <div class="content_container">
+      <div class="title">
+        <h1 class="title_text">User</h1>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> all users</h1>
+        <h3 class="endpoint">/api/users/all</h3>
+        <p>Gets all the users</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> user by id</h1>
+        <h3 class="endpoint">/api/users/by_userId/:id</h3>
+        <p>:id is the id of the user you want to retrieve</p>
+      </div>
+
+      <div class="title">
+        <h1 class="title_text">Body Weights</h1>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> all weights</h1>
+        <h3 class="endpoint">/api/weights/all</h3>
+        <p>Gets all the Body Weights in the database</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> weights of user</h1>
+        <h3 class="endpoint">/api/weights/by_userId/:id</h3>
+        <p>:id is the id of the user you want the weights of</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> weights of user</h1>
+        <h3 class="endpoint">/api/weights/by_userId/:id</h3>
+        <p>:id is the id of the user you want the weights of</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="post">POST</strong> add new weight</h1>
+        <h3 class="endpoint">/api/weights/add</h3>
+        <p>
+          <b>header:</b><br />
+          content-type: application/json <br />
+          <br />
+          <b>body:</b><br />userId: <i>user id</i>,<br />
+          weight: <i>weight to add</i> <br />
+        </p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="put">PUT</strong> edit weight</h1>
+        <h3 class="endpoint">/api/weights/edit</h3>
+        <p>
+          <b>header:</b><br />
+          content-type: application/json <br />
+          <br />
+          <b>body:</b><br />
+          userId: <i>user id</i>,<br />
+          weight: <i>weight to add</i> <br />
+        </p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="delete">DELETE</strong> weight</h1>
+        <h3 class="endpoint">/api/weights/delete</h3>
+        <p>
+          <b>header:</b><br />
+          content-type: application/json <br />
+          <br />
+          <b>body:</b><br />
+          id: <i>id of weight record to delete</i>,<br />
+        </p>
+      </div>
+
+      <div class="title">
+        <h1>Excercises</h1>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> all lifts</h1>
+        <h3 class="endpoint">/api/excercises/all</h3>
+        <p>Gets all excercises</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> all lifts in muscle group</h1>
+        <h3 class="endpoint">/api/excercises/by_muscleGroup/:group</h3>
+        <p>:group is the group you want to query</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> all lifts by name</h1>
+        <h3 class="endpoint">/api/excercises/by_liftName/:name</h3>
+        <p>:name is the name of the lift you want to query</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="post">POST</strong> log new excercise</h1>
+        <h3 class="endpoint">/api/excercises/add</h3>
+        <p>
+          <b>header:</b><br />
+          content-type: application/json <br />
+          <br />
+          <b>body:</b><br />
+          muscleGroup: <i>name of the muscle group</i>,<br />
+          liftName: <i>name of the lift to add</i> <br />
+          reps: <i>the number of reps</i> <br />
+          weight: <i>weight to add</i> <br />
+          userId: <i>id of the user logging</i> <br />
+        </p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="put">PUT</strong> edit excercise log</h1>
+        <h3 class="endpoint">/api/excercises/edit</h3>
+        <p>
+          <b>header:</b><br />
+          content-type: application/json <br />
+          <br />
+
+          <b>body:</b><br />
+          id: <i>id of the lift log to edit</i> <br />
+          muscleGroup: <i>name of the muscle group</i>,<br />
+          liftName: <i>name of the lift to add</i> <br />
+          reps: <i>the number of reps</i> <br />
+          weight: <i>weight to add</i> <br /><br />
+          <i>
+            You don't have to include all of these fields in the body.<br />
+            If a field isn't included in the call then that information will not
+            change.
+          </i>
+          <br /><br />
+        </p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="delete">DELETE</strong> excercise log</h1>
+        <h3 class="endpoint">/api/excercises/delete</h3>
+        <p>
+          <b>header:</b><br />
+          content-type: application/json <br />
+          <br />
+          <b>body:</b><br />
+          id: <i>id of excercise record to delete</i>,<br />
+        </p>
+      </div>
+
+      <div class="title">
+        <h1>Excercises <i>by user</i></h1>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> user's lifts</h1>
+        <h3 class="endpoint">/api/excercises/by_userId/:id</h3>
+        <p>:id is the id of the user</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> user's lifts by muscle group</h1>
+        <h3 class="endpoint">
+          /api/excercises/by_userId/:id/by_muscleGroup/:group
+        </h3>
+        <p>:id is the id of the user<br />:group is the group</p>
+      </div>
+
+      <div class="endpoint_container">
+        <h1><strong class="get">GET</strong> user's lifts by lift name</h1>
+        <h3 class="endpoint">
+          /api/excercises/by_userId/:id/by_liftName/:name
+        </h3>
+        <p>:id is the id of the user<br />:name is the name of the lift</p>
+      </div>
+    </div>
+  </body>
+</html>
