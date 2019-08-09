@@ -16,7 +16,7 @@ Navigate to the folder you downloaded everything to
 cd <The root folder of the project>
 ```
 
-Run docker
+###### Run docker
 
 ```
 docker-compose up -d
@@ -30,7 +30,7 @@ docker-compose up
 The server logs all requests to console with morgan so the logs are pretty informative. 
 <br/>I recommend enabling that just to see if your requests are being recieved.
 
-#Ports
+#### Ports
 
 The only exposed port is 3000, if you want to change the port check the dockerfile documentation included.
 <br/>To make a request use 
@@ -38,7 +38,7 @@ The only exposed port is 3000, if you want to change the port check the dockerfi
 ```
 http://localhost:3000/
 ```
-Or
+###### Or
 
 ```
 Http://172.0.0.1:3000/
