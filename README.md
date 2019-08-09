@@ -1,6 +1,6 @@
 # Excercise Tracker
 
-This is a node app to track strength training progress. I built it specifically for tracking my own progress at the gym. While I built it for myself, anyone who wants to fork this app and play around with it themselves is more than able to. The whole project is set to run inside Docker containers so setting it up yourself is pretty easy!
+This is a node app to track strength training progress. I built it specifically for tracking my own progress at the gym but it's a pretty general api setup. Feel free to fork and add to the app. If you download a copy and want to run it the whole project is set to run inside Docker containers! Getting it to run on your machine should be pretty easy!
 
 ### If you want to mess around with the app
 
@@ -8,7 +8,7 @@ Make sure you have the Docker daemon installed on your machine!
 
 ### Installing
 
-To  set up the app
+To set up the environment
 
 Navigate to the folder you downloaded everything to
 
@@ -21,14 +21,13 @@ Run docker
 ```
 docker-compose up -d
 ```
-or if you want to see the console logs from the server
+or if you want to see the console logs from the server ( The server logs all requests to console with morgan so the logs are pretty informative)
 
 ```
 docker-compose up
 ```
 
-To access it after you start the containers or make requests
-Use port 3000.
+The only exposed port is 3000, if you want to change the port check the dockerfile documentation included.
 
 To make a request use 
 
@@ -41,9 +40,10 @@ Or
 Http://172.0.0.1:3000/
 ```
 
-There’s a html file with all the endpoint documentation for the api included
-Click that to open it and see all the requests
-(It’s not finished currently but ill finish it soon)
+There’s a html file with all the endpoint documentation for the api included in the documentation folder.
+Click that to open it in your browser and see all the request endpoints.
+<br/>~(It’s not finished currently but ill finish it soon)~
+<br/> The api documentation is finished for the current endpoints!
 
 
 ## Built With
